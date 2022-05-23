@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESSAGE ME </title>
+    <link rel="stylesheet" type="text/css" href="style/master.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"> 
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        
+          <section class="hero is-primary is-small">
+            <div class="hero-body">
+              <div class="container">  
+                <h1 class="title">
+                    MESSAGE ME &nbsp; <span class="icon has-text-black w3-spin w3-large">
+                        <i class="far fa-laugh-beam fa-2x animated bounceInDown"></i>
+                    </span>
+                </h1>
+                <h2 class="subtitle">
+                   SEND A MESSAGE TO MY MAIL
+                </h2>
+              </div>
+            </div>
+          </section>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-success" href="aboutme.html">
+                  <strong> ABOUT ME</strong>
+                </a>
+                <a class="button is-light" href="plans.html">
+                  MY PLANS
+                </a>
+              </div>
+            </div>
+          </div>
+    </nav>
+
+    
+      
+      <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,74.7C480,64,600,96,720,106.7C840,117,960,107,1080,85.3C1200,64,1320,32,1380,16L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg-->
+<br><br>
+      <div class="columns">
+        <div class="column"></div>
+          <div class="column is-mobile">
+            <div class="box">
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/mqkywlzj" method="post">
+                    <label for="full-name">Full Name</label>
+                    <input class="input" type="text" name="name" id="full-name" placeholder="My Name" required=""><br><br>
+                    <label for="email-address">Email Address</label><br>
+                    <input class="input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""><br><br>
+                    <label for="message">Message</label><br>
+                    <textarea class="textarea has-fixed-size" rows="5" name="message" id="message" placeholder="Message" required=""></textarea><br>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                     
+                    <input class="button is-danger is-pulled-right" type="submit" value="SEND"><br><br>
+                </form>
+            </div>
+        </div>
+        
+        <div class="column"></div>
+    </div>
+</body>
+
+
+
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
+
+</html>
